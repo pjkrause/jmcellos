@@ -4,15 +4,26 @@
 
 body {
   padding-top: 0;
-  background-color: #FFFFD6;
+  background-color: #ffe6cc; // #e6ccb3;
   font-family: "Century Gothic", Helvetica, sans-serif;
 }
 
 article#main {
-  // background-image: url(image_path('mint-green-polka-dots-2284.png'));
+  background-image: url(image_path('jeremyb.jpg'));
   margin-left: auto;
   margin-right: auto;
   width: 960px;
+  min-height: 1000px;
+
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    margin-left: 1em;
+    margin-right: 1em;
+    color: #fff;
+  }
 
   header {
     width: 100%;
