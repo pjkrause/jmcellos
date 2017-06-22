@@ -2,6 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+  padding-top: 0;
+  background-color: #FFFFD6;
+  font-family: "Century Gothic", Helvetica, sans-serif;
+}
+
+article#main {
+  // background-image: url(image_path('mint-green-polka-dots-2284.png'));
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+
   header {
     width: 100%;
     text-align: center;
@@ -34,3 +46,4 @@
       }
     }
   }
+}
