@@ -25,6 +25,13 @@ article#main {
     margin-left: 1em;
     margin-right: 1em;
     // color: #fff;
+    a:link {
+      color: #4d2600;
+    }
+    
+    a:visited {
+      color: #663300;
+    }
   }
 
   img {
@@ -72,7 +79,7 @@ article#main {
     margin-left: 10%;
     margin-right: 10%;
     padding-bottom: 2em;
-    background: rgba(255, 229, 208, 0.6);
+    background: rgba(255, 229, 208, 0.7);
     // background-image: url(image_path('jeremy2SansAddressFlatScaled.png'));
     // min-height: 1554px;
   }
