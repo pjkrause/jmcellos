@@ -14,6 +14,18 @@ Rails.application.configure do
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
 
+  # Use sendmail for delivery
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = { 
+    address: "smtp.gmail.com",
+    port: 587,
+    # domain: "http://surrey.ac.uk", 
+    authentication: "plain",
+    user_name: "paul.j.krause@gmail.com", 
+    password: "hongying", 
+    enable_starttls_auto: true
+  }
+
   # Attempt to read encrypted secrets from `config/secrets.yml.enc`.
   # Requires an encryption key in `ENV["RAILS_MASTER_KEY"]` or
   # `config/secrets.yml.key`.

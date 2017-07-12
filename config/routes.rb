@@ -6,7 +6,8 @@ Rails.application.routes.draw do
 
   get '/sales', to: 'main#sales'
 
-  get '/contact', to: 'main#contact'
+  get '/contact', to: 'main#contact', as: 'contact'
+  post '/contact', to: 'main#create'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

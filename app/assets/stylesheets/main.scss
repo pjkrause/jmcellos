@@ -82,5 +82,14 @@ article#main {
     background: rgba(255, 229, 208, 0.7);
     // background-image: url(image_path('jeremy2SansAddressFlatScaled.png'));
     // min-height: 1554px;
+
+    input {
+      width: 90%;
+    }
+
+    textarea {
+      width: 90%;
+      height: 10em;
+    }
   }
 }

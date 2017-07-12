@@ -1,2 +1,25 @@
-<h1>Contacting Jeremy</h1>
-<p>Find me before your <i>very</i> eyes...</p>
+<section id="page_content">
+  <h1>Contacting Jeremy</h1>
+  <%= form_for @contact, url: contact_path do |contact_form| %>
+    <fieldset>
+      <div class="field">
+        <%= contact_form.text_field :name, placeholder: "Name" %>
+      </div>
+    
+      <div class="field">
+        <%= contact_form.email_field :email, placeholder: "Email"%>
+      </div>
+    
+      <div class="field">
+        <%= contact_form.text_area :message, placeholder: "Message"%>
+      </div>
+    </fieldset>
+  
+    <fieldset>
+      <div class="field">
+        <%= contact_form.submit "Send" %>
+      </div>
+    </fieldset>
+  <% end %>
+
+</section>
