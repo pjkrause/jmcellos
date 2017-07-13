@@ -20,7 +20,7 @@ Rails.application.configure do
     address: "smtp.gmail.com",
     port: 587,
     domain: "https://afternoon-fortress-80191.herokuapp.com", 
-    authentication: :plain,
+    authentication: :login,
     user_name: "paul.j.krause@gmail.com", 
     password: "hongying", 
     enable_starttls_auto: true
