@@ -91,5 +91,12 @@ article#main {
       width: 90%;
       height: 10em;
     }
+
+    .right_image {
+      float: right;
+      // display: inline-block;
+      padding-right: 2em;
+    }
+
   }
 }
