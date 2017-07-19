@@ -27,5 +27,4 @@ test:
 production:
   <<: *default
   database: db/production
-  username: jeremy
-  password: jmcello
+  username: root
