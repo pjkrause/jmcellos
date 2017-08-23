@@ -4,28 +4,22 @@
     If you are interested in finding out more about any of the cellos that are in stock,
     or would like to find out more about my repair and restoration workshop, please
     <a href="mailto:jeremymahrer@gmail.com">
-    email me</a> , or complete the contact form below. 
+    email me</a>, or:  
   </p>
-  <%= form_for @contact, url: contact_path do |contact_form| %>
-    <fieldset>
-      <div class="field">
-        <%= contact_form.text_field :name, placeholder: "Name" %>
-      </div>
-    
-      <div class="field">
-        <%= contact_form.email_field :email, placeholder: "Email"%>
-      </div>
-    
-      <div class="field">
-        <%= contact_form.text_area :message, placeholder: "The Form is not working just now. Please email instead by clicking on the 'email me' link."%>
-      </div>
-    </fieldset>
-  
-    <fieldset>
-      <div class="field">
-        <%= contact_form.submit "Send" %>
-      </div>
-    </fieldset>
-  <% end %>
+  <p>
+    send a message to my mobile <%= number_to_phone("07982019185", country_code: "44") %>;
+  </p>
+  <p>
+    phone me at home (mobile reception is poor for talking that way) <%= number_to_phone("02082742667", country_code: "44") %>;
+  </p>
+  <p>
+    or, just write to me at: <br>
+    <address>
+      10 Sutherland House<br>
+      Ham Street<br>
+      Ham, Richmond<br>
+      Surrey, TW10 7HE<br>
+    </address>
+  </p>
 
 </section>
