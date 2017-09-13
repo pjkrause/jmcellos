@@ -18,6 +18,18 @@ class MainController < ApplicationController
     @contact = Contact.new
   end
 
+  def cello1
+    @title = "Gore Booth Copy"
+  end
+
+  def cello2
+    @title = "Fleming 1717 Copy"
+  end
+
+  def cello3
+    @title = "Gore Booth Copy"
+  end
+
   def create
     @contact = Contact.new(contact_params)
 

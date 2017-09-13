@@ -6,6 +6,10 @@ Rails.application.routes.draw do
 
   get '/sales', to: 'main#sales'
 
+  get '/cello1', to: 'main#cello1'
+  get '/cello2', to: 'main#cello2'
+  get '/cello3', to: 'main#cello3'
+
   get '/contact', to: 'main#contact', as: 'contact'
   post '/contact', to: 'main#create'
 
