@@ -3,29 +3,38 @@
   <p>
     I currently have three cellos available, with a fourth in final stages of construction. All three are outstanding in looks and sound, each one being quite distinct. 
   </p>
-  <article class="CelloOverview">
-    <h2><q>Gore-Booth Copy</q></h2>
-    <p>
-      This cello is based on the Gore-Booth Stradivarius of 1710. The string length is 694mm. The
-      back length is 760mm.
-    </p>
-    <%= image_tag("cello1/front_small.png", alt: "Gore-Booth copy") %>
-  </article>
-  <article class="CelloOverview">
-    <h2><q>Amaryllis Fleming Copy</q></h2>
-    <p>
-      This cello is based on the beautiful Amaryllis Fleming Stradivarius of 1717. This was a composite with back and ribs by Stradivari and the top and head made later by Contreras. On my cello, the string length is 690mm, the back length is 764mm.
-    </p>
-    <%= image_tag("cello2/front_small.png", alt: "Amaryllis Fleming copy") %>
-  </article>
-  <article class="CelloOverview">
-    <h2><q>Gore-Booth Copy</q></h2>
-    <p>
-      This cello is also based on the Gore-Booth Stradivarius of 1710, although with quite a distinct 
-      appearance and tone to cello #1. The string length is 690mm. The
-      back length is 776mm.
-    </p>
-    <%= image_tag("cello3/front_small.png", alt: "Gore-Booth copy") %>
-  </article>
+
+  <%= link_to(cello1_path) do %>
+    <article class="CelloOverview">
+      <h2><q>Gore-Booth Copy</q></h2>
+      <p>
+        This cello is based on the Gore-Booth Stradivarius of 1710. The string length is 694mm. The
+        back length is 760mm.
+      </p>
+      <%= image_tag("cello1/front_small.png", alt: "Gore-Booth copy") %>
+    </article>
+  <% end %>
+
+  <%= link_to(cello2_path) do %>
+    <article class="CelloOverview">
+      <h2><q>Amaryllis Fleming Copy</q></h2>
+      <p>
+        This cello is based on the beautiful Amaryllis Fleming Stradivarius of 1717. This was a composite with back and ribs by Stradivari and the top and head made later by Contreras. On my cello, the string length is 690mm, the back length is 764mm.
+      </p>
+      <%= image_tag("cello2/front_small.png", alt: "Amaryllis Fleming copy") %>
+    </article>
+  <% end %>
+
+  <%= link_to(cello3_path) do %>
+    <article class="CelloOverview">
+      <h2><q>Gore-Booth Copy</q></h2>
+      <p>
+        This cello is also based on the Gore-Booth Stradivarius of 1710, although with quite a distinct 
+        appearance and tone to cello #1. The string length is 690mm. The
+        back length is 776mm.
+      </p>
+      <%= image_tag("cello3/front_small.png", alt: "Gore-Booth copy") %>
+    </article>
+  <% end %>
 </section>
 
